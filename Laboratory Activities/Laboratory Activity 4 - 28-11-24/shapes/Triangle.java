@@ -11,7 +11,7 @@ public class Triangle implements Shape {
 
     @Override
     public double getArea() {
-        double s = (a + b + c) / 2; 
+        double s = (getPerimeter()) / 2; 
         return Math.sqrt(s * (s - a) * (s - b) * (s - c));
     }
 
